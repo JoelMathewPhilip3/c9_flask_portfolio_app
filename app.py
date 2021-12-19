@@ -84,6 +84,11 @@ def python_apps_page():
 	# testing stuff
 	return render_template('python_apps.html')
 
+@app.route('/final_project')
+def final_project_page():
+	# testing stuff
+	return render_template('final_project.html')
+
 
 @app.route('/blog', methods=['GET'])
 def blog_page():
