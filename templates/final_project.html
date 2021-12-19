@@ -13,6 +13,7 @@
                         <hr class="star-light">
                         <span class="skills">Kennesaw State University Senior Design Final Project. 
                            <br> Team Members : Joel Mathew Philip, Diego Escobar Escobar, Jeremy Plattel, Timothy Lemley
+			   <br>
                            <br> * Best KSU Senior Design Mechatronics Project 2021. 
                            <br> * 2nd Place Overall KSU Engineering Expo 2021</span>
                     </div>
@@ -60,7 +61,8 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="https://media.discordapp.net/attachments/876991329702387713/922131098358648942/LAB_PHOTO.PNG?width=854&height=540" width="500"height="400" target="_blank" class="img-responsive" alt="Chesstastic">
+                        <img src="https://media.discordapp.net/attachments/876991329702387713/922131098358648942/LAB_PHOTO.PNG?width=854&height=540" width="500"height="400" target="_blank" class="img-responsive" alt="Youtube Video">
+			<br><p>
                     </a>
                 </div>
 		    
@@ -77,20 +79,12 @@
 			<br>
                 </div>                                                
                 <div class="col-lg-6 text-left">
-			 <p> - SCADA(Supervisory control and data acquisition) is a computer system architecture that provides a graphical interface between a user and an industrial system. <p>
-			 <p> - These SCADA applications provide some level of control over the system and also provides graphical access to diagnostics and status information for devices in the system or the system as a whole.<p>  
-			 <p> - CONTROL : 
-				 <br>1) Process start, stop, and reset 
-				 <br>2) Manual control of whether high or low pressure is used to grip a box. <p>
-			 <p> - VIEW : 
-				 <br>1) System and safety status info 
-				 <br>2) Active system alarms 
-				 <br>3) Pressure level in the gripping mechanism 
-				 <br>4) Whether a payload is present in the gripper 
-				 <br>5) Whether the gripper is actuated 
-				 <br>6) Machine vision and machine learning data for a payload such as type, position, orientation, and whether a lid is required.	
-			         <br><p>
-                </div>   
+			 <p> - Machine Vision : Determine the number of payloads in the workspace, the position ( X,Y ) of the closest payload and the rotation of the closest payload. <p> 
+		 	 <p> - For Machine Vision, a program is written to draw a red box around the boxes and find it's centroid. Using this the above data types are found. The robot uses this data to pick up boxes according to the closest distance from home position.  <p>  
+			 <p> - Machine Learning : Determines the type of the box <p>
+			 <p> - To make a functional AI model, the hyper-parameters must be defined. Our team created a model that accepts 30X30 pixel images and processes them through one 1000 node hidden layer. It can output five different classes: Black box, Styrofoam box, cardboard box, clear box, and null or “it doesn’t know” <p>	
+			 <p> - After defining the model, it must be trained. Training is the process of changing the weights of each node over and over again until the  model accuracy is high enough. Our team is using a Neural Network to determine what type of box is underneath the robot. We have trained it on approximately 5000 images taken over the course of the semester. <p>	
+			 <br>
             </div>
 		    
 			
